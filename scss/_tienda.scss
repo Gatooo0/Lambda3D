@@ -1,0 +1,54 @@
+/* ----------TIENDA---------- */
+.tienda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.grilla{
+  border: solid black;
+  overflow: hidden;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin: 0 1rem 0 1rem;
+}
+.cajita{
+  padding: 0 1.5rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.grilla img{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  border: solid;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+/* Versión Tablet */
+@media(min-width: 768px){
+  .grilla img{
+    width: 18rem;
+    height: 18rem;
+  }
+}
+/* Versión Escritorio */
+@media(min-width: 992px){
+  .grilla img{
+    width: 20rem;
+    height: 20rem;
+  }
+}
+.grilla img:hover{
+  border-style: double;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px 0 #19647E;
+}
+.grilla p{
+  font-size: 2rem;
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
+}

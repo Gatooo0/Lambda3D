@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sección de Contacto de Lambda 3D.">
+    <meta name="keywords"
+        content="3D, impresiones 3D, impresora 3D, star wars 3D, litografìas, macetas 3D, modelado 3D, mates 3D">
+    <title>Contacto - Lambda 3D</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="../img/logo.JPG" sizes="16x16">
+
+</head>
+
+<body>
+    <!-- Inicio Menu de Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light navegBar">
+        <div class="container-fluid menuNav">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.JPG" alt="logo de lambda 3D" width="80" height="80" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="background-color: rgb(244, 208, 63);" aria-current="page"
+                            href="../html/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="buscador d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin Menu de Navegacion -->
+
+    <!-- Inicio Contacto -->
+    <section class="contacto container-fluid">
+        <div class="contactTitulo">
+            <h1 class="tituloGrande">Consultas</h1>
+        </div>
+        <!-- Inicio Formulario -->
+        <div class="contactFormulario container">
+            <h1>Formulario</h1>
+            <form>
+                <fieldset>
+                    <!-- Inicio Nombre, Apellido y Mail -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label col-form-label-lg">Nombre</label>
+                        <input type="text" class="form-control form-control-lg" id="name"
+                            placeholder="Ingrese su Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname" class="form-label col-form-label-lg">Apellido</label>
+                        <input type="text" class="form-control form-control-lg" id="surname"
+                            placeholder="Ingrese su Apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label col-form-label-lg">Dirección de Email</label>
+                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                            placeholder="Ingrese su e-mail" required>
+                        <div id="emailHelp" class="form-text disclaimer">No compartiremos la Información con nadie</div>
+                    </div>
+                    <!-- Fin Nombre, Apellido y Mail -->
+                    <!-- Inicio Servicio -->
+                    <div class="mb-3">
+                        <label for="articulo" class="form-label col-form-label-lg">Seleccione el servicio por el cual
+                            realiza su consulta:</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>--</option>
+                            <option value="insumos">Compra de Insumos</option>
+                            <option value="diseño">Diseño 3D</option>
+                            <option value="impresion">Impresión 3D</option>
+                            <option value="reparacion">Reparación de Impresora</option>
+                        </select>
+                    </div>
+                    <!-- Fin Color -->
+                    <!-- Inicio Artículo -->
+                    <div class="mb-3">
+                        <label for="articulo" class="form-label col-form-label-lg">En caso de que el servicio
+                            seleccionado sea Impresión 3D, ¿sobre qué Artículo/s es su consulta?</label>
+                        <div class="articulo form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Chapitas
+                            </label>
+                        </div>
+                        <div class="articulo form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Lámparas
+                            </label>
+                        </div>
+                        <div class="articulo form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Macetas
+                            </label>
+                        </div>
+                        <div class="articulo form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Mates
+                            </label>
+                        </div>
+                        <div class="articulo form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Artículo Personalizado
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Fin Artículo -->
+
+                    <!-- Inicio TextArea -->
+                    <div class="mb-3">
+                        <label for="consulta" class="form-label col-form-label-lg">Escribí tu consulta:</label>
+                        <textarea class="form-control" aria-label="With textarea" name="consulta" id="" cols="30"
+                            rows="10" maxlength="500"></textarea>
+                    </div>
+                    <!-- Fin TextArea -->
+                    <!-- Inicio Pasos Finales -->
+                    <div class="newsletter mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newsletter">
+                        <label class="form-check-label col-form-label-lg" for="newsletter">¿Desea suscribirse al
+                            Newsletter?</label>
+                    </div>
+                    <input class="botonContFormulario" type="submit" value="Enviar consulta">
+                    <input class="botonContFormulario" type="reset" value="Limpiar fomulario">
+                    <!-- Fin Pasos Finales -->
+                </fieldset>
+            </form>
+        </div>
+        <!-- Fin Formulario -->
+    </section>
+    <!-- Fin Contacto -->
+
+    <!-- Inicio Footer -->
+    <footer>
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <!-- Inicio Navegacion -->
+                <div class="footerNav col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                    <h3 class="text-uppercase mb-4 footerTitulo">Navegación</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <a href="./index.html">Inicio</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="./html/tienda.html">Tienda</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="./html/servicios.html">Servicios</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="./html/nosotros.html">Nosotros</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="./html/contacto.html">Contacto</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Fin Navegacion -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Inicio Contacto -->
+                <div class="footerCont col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+                    <h3 class="font-weight-bold text-uppercase mb-4 footerTitulo">Información de Contacto</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="fas fa-home mr-3"></i>Dirección: Francisco N. Laprida 814 Oeste San Juan
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> Mail: lambda3d@gmail.com
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i>Teléfono: +542644572233
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Fin Contacto -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Inicio Redes -->
+                <div class="footerRed col-md-2 col-lg-2 text-center mx-auto my-4">
+                    <h3 class="text-uppercase mb-4 footerTitulo">Seguinos en Nuestras Redes</h3>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/Lambda-impresiones-3D-103804675162783" type="button"
+                        class="btn-face" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/lambda3d/" type="button" class="btn-insta" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://api.whatsapp.com/send?phone=542646249750&text=Hola!%20Quer%C3%ADa%20consultarte%20por%3A%20"
+                        type="button" class="btn-wsp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <!-- Fin Redes -->
+            </div>
+        </div>
+        <!-- Inicio Copyright -->
+        <div class="footerCopy text-center py-3">
+            <a>© 2021 Copyright: López Gastón</a>
+        </div>
+        <!-- Fin Copyright -->
+    </footer>
+    <!-- Fin Footer -->
+
+</body>
+<script src="https://kit.fontawesome.com/c091e997ce.js" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,76 @@
+  /* ----------Servicios---------- */
+  .servicios{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+  .servCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .servFotos{
+    border: solid black;
+    overflow: hidden;
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+    padding: 1rem 0 1rem 0;
+  }
+  .cajita{
+    padding: 0 1rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .servFotos img{
+    width: 20rem;
+    height: 16rem;
+    border-radius: 20px;
+    border: solid;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+  }
+  /* Versión Tablet */
+  @media(min-width: 768px){
+    .servFotos img{
+      width: 24rem;
+      height: 18rem;
+    }
+  }
+  /* Versión Escritorio */
+  @media(min-width: 992px){
+    .servFotos img{
+      width: 32rem;
+      height: 24rem;
+    }
+  }
+  .servFotos img:hover{
+    border-style: double;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 #19647E;
+  }
+  .nombreServ{
+    background-color: #081B26;
+    max-width: 320px;
+    min-width: 150px;
+    height: 5rem;
+    margin-top: -25px;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.25rem;
+  }
+  .servVideos{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+  }

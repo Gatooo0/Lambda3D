@@ -1,0 +1,692 @@
+@charset "UTF-8";
+/* ----------RESETEO---------- */
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ----------BODY---------- */
+body {
+  font-family: 'Gemunu Libre', sans-serif;
+  background-color: rgba(38, 107, 55, 0.945);
+}
+
+/*----------IMPORTS----------*/
+/* ----------INDEX---------- */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contPrincipal {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin: 0 1rem 0 1rem;
+  border: solid black;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mensajeFlotante {
+  border: #f4d03f solid;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: black;
+  background-color: rgba(128, 128, 128, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  overflow: hidden;
+  min-width: 40%;
+}
+
+/* Versión Tablet */
+@media (min-width: 768px) {
+  .mensajeFlotante {
+    font-size: 1.25rem;
+  }
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .mensajeFlotante {
+    font-size: 2rem;
+  }
+}
+
+.imgCarrusel {
+  width: 450px;
+  height: 450px;
+}
+
+/* Versión Tablet */
+@media (min-width: 768px) {
+  .imgCarrusel {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .imgCarrusel {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+/* ----------TIENDA---------- */
+.tienda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.grilla {
+  border: solid black;
+  overflow: hidden;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.cajita {
+  padding: 0 1.5rem 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grilla img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  border: solid;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+/* Versión Tablet */
+@media (min-width: 768px) {
+  .grilla img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .grilla img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.grilla img:hover {
+  border-style: double;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 0 10px 0 #19647E;
+          box-shadow: 0 0 10px 0 #19647E;
+}
+
+.grilla p {
+  font-size: 2rem;
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
+}
+
+/* ----------Servicios---------- */
+.servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+.servFotos {
+  border: solid black;
+  overflow: hidden;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  padding: 1rem 0 1rem 0;
+}
+
+.cajita {
+  padding: 0 1rem 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servFotos img {
+  width: 20rem;
+  height: 16rem;
+  border-radius: 20px;
+  border: solid;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+/* Versión Tablet */
+@media (min-width: 768px) {
+  .servFotos img {
+    width: 24rem;
+    height: 18rem;
+  }
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .servFotos img {
+    width: 32rem;
+    height: 24rem;
+  }
+}
+
+.servFotos img:hover {
+  border-style: double;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 10px 0 #19647E;
+          box-shadow: 0 0 10px 0 #19647E;
+}
+
+.nombreServ {
+  background-color: #081B26;
+  max-width: 320px;
+  min-width: 150px;
+  height: 5rem;
+  margin-top: -25px;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.servVideos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* ----------NOSOTROS---------- */
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosTitulo, .nosEquipo, .nosHistoria, .nosUbicacion {
+  padding: 1rem 0 1rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosEquipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.integranteEquipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nombreIntegrante {
+  background-color: #081B26;
+  max-width: 300px;
+  min-width: 150px;
+  height: 5rem;
+  margin-top: -25px;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 20px;
+  border: 1px solid white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.nosHistoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10px 10px 10px;
+  margin: 1rem;
+  background-color: rgba(244, 208, 63, 0.753);
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
+  border-radius: 20px;
+}
+
+.textoHistoria {
+  font-size: 30px;
+  color: black;
+  text-align: justify;
+}
+
+.nosUbicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/* ----------CONTACTO---------- */
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactFormulario {
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  border: black solid;
+}
+
+.contactFormulario fieldset, .contactFormulario label {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contactFormulario input, .disclaimer, select, option, .articulo label, .newsletter label {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.articulo, .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+textarea {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  background-color: #eef8ee;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+.botonContFormulario {
+  cursor: pointer;
+  margin-left: 25%;
+  border-color: #172617;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  font-family: 'Gemunu Libre', sans-serif;
+  background-color: #eef8ee;
+}
+
+.botonContFormulario:hover {
+  -webkit-box-shadow: 0 0 10px 0 #000000;
+          box-shadow: 0 0 10px 0 #000000;
+  background-color: rgba(244, 208, 63, 0.582);
+  border: 2px solid #f4d03f;
+}
+
+/* ----------HEADER---------- */
+.banner {
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../img/banner.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------NAVBAR---------- */
+.navegBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: var(--bs-body-bg);
+  background-color: rgba(128, 128, 128, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.menuNav {
+  width: 80%;
+}
+
+@media (max-width: 991px) {
+  .menuNav {
+    background-color: rgba(255, 255, 255, 0.315);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+  }
+}
+
+.menuNav a {
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  padding: 0 0.5rem 0 0.5rem;
+  margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+}
+
+.menuNav a:hover {
+  -webkit-box-shadow: 0 0 10px 0 #000000;
+          box-shadow: 0 0 10px 0 #000000;
+  background-color: rgba(244, 208, 63, 0.582);
+  border: 2px solid #f4d03f;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 200px;
+}
+
+/* Versión Tablet */
+@media (min-width: 768px) {
+  .logo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .logo {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.buscador button {
+  color: black;
+  background-color: rgba(244, 208, 63, 0.582);
+  border-color: #f4d03f;
+}
+
+.buscador {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+/* ----------CONTENIDO---------- */
+.tituloGrande {
+  font-size: 5rem;
+  text-decoration: underline;
+  font-weight: 100;
+  color: #f4d03f;
+  z-index: -1;
+}
+
+.tituloSecundarioOscuro {
+  font-size: 3rem;
+  font-weight: 120;
+  color: #161f06;
+  text-decoration: underline;
+}
+
+.tituloSecundarioClaro {
+  font-size: 3rem;
+  font-weight: 120;
+  color: #e5f5c7;
+  text-decoration: underline;
+}
+
+/* ----------FOOTER---------- */
+footer {
+  background-color: rgba(22, 61, 32, 0.945);
+  border-style: solid;
+}
+
+.footerTitulo {
+  color: #f4d03f;
+}
+
+.footerNav a, .footerCon i, .footerRed i {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.footerNav a {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.footerNav a:hover {
+  -webkit-box-shadow: 0 0 10px 0 #000000;
+          box-shadow: 0 0 10px 0 #000000;
+  background-color: rgba(244, 208, 63, 0.582);
+  border: 2px solid #f4d03f;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .footerNav a {
+    font-size: 1.5rem;
+  }
+}
+
+.footerCont p {
+  color: white;
+}
+
+.footerCont i {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .footerCont p {
+    font-size: 1.5rem;
+    padding: 1rem 0 1rem 0;
+  }
+  .footerCont i {
+    font-size: 2rem;
+  }
+}
+
+.footerRed i {
+  color: white;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.footerRed i:hover {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 0 #000000;
+          box-shadow: 0 0 10px 0 #000000;
+  background-color: rgba(244, 208, 63, 0.582);
+  border: 2px solid #f4d03f;
+}
+
+/* Versión Tablet */
+@media (min-width: 768px) {
+  .footerRed i {
+    font-size: 2rem;
+  }
+}
+
+/* Versión Escritorio */
+@media (min-width: 992px) {
+  .footerRed i {
+    font-size: 5rem;
+  }
+}
+
+.footerCopy {
+  font-size: 1.25rem;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

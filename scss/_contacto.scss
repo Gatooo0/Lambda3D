@@ -1,0 +1,48 @@
+  /* ----------CONTACTO---------- */
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+  }
+  .contactFormulario{
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+    border: black solid;
+  }
+  .contactFormulario fieldset , .contactFormulario label{
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .contactFormulario input, .disclaimer, select, option , .articulo label , .newsletter label{
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .articulo , .newsletter{
+    display: flex;
+    align-items: center;
+  }
+  textarea{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    background-color: #eef8ee;
+    font-family: 'Gemunu Libre', sans-serif;
+  }
+  .botonContFormulario{
+    cursor: pointer;
+    margin-left: 25%;
+    border-color: #172617;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    font-family: 'Gemunu Libre', sans-serif;
+    background-color: #eef8ee;
+  }
+  .botonContFormulario:hover{
+    box-shadow: 0 0 10px 0 #000000; 
+    background-color: rgba(244, 208, 63, 0.582);
+    border: 2px solid rgb(244, 208, 63);
+  }
+  
