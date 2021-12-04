@@ -36,7 +36,7 @@ main {
 }
 
 .contPrincipal {
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 0 1rem 0;
   margin: 0 1rem 0 1rem;
   border: solid black;
   background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
@@ -79,8 +79,8 @@ main {
 }
 
 .imgCarrusel {
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
 }
 
 /* Versión Tablet */
@@ -303,12 +303,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-bottom: 2rem;
 }
 
 /* ----------NOSOTROS---------- */

@@ -9,7 +9,7 @@
     align-items: center;
   }
   .contPrincipal{
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 0 1rem 0;
     margin: 0 1rem 0 1rem;
     border: solid black;
     background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
@@ -42,8 +42,8 @@
     }
   }
   .imgCarrusel{
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     }
 /* Versión Tablet */
 @media(min-width: 768px){
